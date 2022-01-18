@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-cloud-gateway" />
+        <module name="demo-cloud-microservice-user" />
+        <module name="demo-cloud-config" />
+        <module name="demo-cloud-register" />
+        <module name="democloudmicroservice" />
+        <module name="demo-cloud-common" />
+        <module name="demo-cloud-auth" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo-auth" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-auth" options="-parameters" />
+      <module name="demo-cloud-auth" options="-parameters" />
+      <module name="demo-cloud-common" options="-parameters" />
+      <module name="demo-cloud-config" options="-parameters" />
+      <module name="demo-cloud-gateway" options="-parameters" />
+      <module name="demo-cloud-microservice-user" options="-parameters" />
+      <module name="demo-cloud-register" options="-parameters" />
+      <module name="democloudmicroservice" options="-parameters" />
+    </option>
+  </component>
+</project>
